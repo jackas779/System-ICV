@@ -1,4 +1,4 @@
-#Todo en el proyecto es a base de clases con POO. 
+# Todo en el proyecto es a base de clases con POO. 
 
 Modelo -> Datos -> Logica de datos
 Hacer peticion a la base de datos.
