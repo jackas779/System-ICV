@@ -1,14 +1,20 @@
-# Todo en el proyecto es a base de clases con POO. 
-
-Modelo -> Datos -> Logica de datos
-Hacer peticion a la base de datos.
-
-Vistas -> 
-Templates de html y css, js
+# El proyecto se basara en POO.
 
 
-Controllador -> Logica de negocio
-controla y decide como se muestran los datos.
+## Instalacion
+
+Instalacion de librerias para ejecutar el proyecto correctamente con via [Composer](https://getcomposer.org/):
+
+```bash
+$ composer install
+```
+
+### Modelo: 
+  El modelo representa la lógica de negocio y la gestión de datos de la aplicación. Es responsable de la manipulación de datos, la validación de datos y la lógica de negocio. El modelo se comunica con la base de datos y se encarga de la persistencia de datos.
+### Vista:
+  La vista es la interfaz gráfica de usuario (GUI) de la aplicación. Es responsable de mostrar la información al usuario y de manejar los eventos de la interfaz. La vista no tiene acceso directo a la lógica de negocio y se comunica con el controlador para obtener la información necesaria para mostrar.
+### Controlador: 
+  El controlador es el encargado de manejar las solicitudes de la aplicación y de coordinar la interacción entre el modelo y la vista. Es responsable de recibir las solicitudes de la aplicación, de invocar las acciones correspondientes en el modelo y de enviar la información a la vista para mostrarla al usuario.
 
 
 directorio Config 
