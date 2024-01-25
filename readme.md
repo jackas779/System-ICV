@@ -6,12 +6,18 @@
 Instalacion de librerias para ejecutar el proyecto correctamente con via [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer install
+composer install
 ```
 ### Creacion del archivo .env 
   Se debe crear un archivo .env para hacer puede ingresar al navegador y crear el .env aqui iran todas las variables globales que se usaran en el archivo 
   de no crear el archivo se puede generar un error de :
-      InvalidPathException
+  - InvalidPathException
+
+  ![imagen de referencia para saber en donde crear el archivo .env](/src/img/foto%20env.png)
+
+
+
+## Estructura del proyecto 
 
 ### Modelo: 
   El modelo representa la lógica de negocio y la gestión de datos de la aplicación. Es responsable de la manipulación de datos, la validación de datos y la lógica de negocio. El modelo se comunica con la base de datos y se encarga de la persistencia de     datos.
