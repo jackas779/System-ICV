@@ -65,6 +65,45 @@ class products {
         }
         $conn->close();
     }
+    public static function UpdateProducts(string $tipo,$upda,$id){
+        $database = new databse();
+        $conn = $database->conexion();
+        if($tipo == 1){
+            $sql = $conn->prepare("UPDATE productos SET descripcion = ? WHERE prod_id = ? ");
+            $sql->bind_param('si',$upda,$id);
+            $sql->execute();
+            if($sql){
+                if($conn->affected_rows == 1){
+                    return "Se actualizo correctamente el producto";
+                }else{
+                    $error = mysqli_error($conn);
+                    return "No se pudo actualizar el producto por que no existe $error ";
+                }
+            }else{
+                $error = mysqli_error($conn);
+                return "No se pudo actualizar el producto $error ";
+            }
+
+        }else if($tipo == 2){
+            $sql = $conn->prepare("UPDATE productos SET producto = ? WHERE prod_id = ? ");
+            $sql->bind_param('si',$upda,$id);
+            $sql->execute();
+            if($sql){
+                if($conn->affected_rows == 1){
+                    return "Se actualizo correctamente el producto";
+                }else{
+                    $error = mysqli_error($conn);
+                    return "No se pudo actualizar el producto por que no existe $error ";
+                }
+            }else{
+                $error = mysqli_error($conn);
+                return "No se pudo actualizar el producto $error ";
+            }
+        }else{
+            return "No a selecionado una opcion valida";
+        }
+
+    }
 }
 
 ?>
